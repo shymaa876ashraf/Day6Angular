@@ -1,0 +1,25 @@
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">UserID</th>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userPost">
+        <th scope="row">1</th>
+        <td>{{user.userId}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.title}}</td>
+        <td>{{user.body}}</td>
+      </tr>
+   
+      
+    </tbody>
+  </table>
+

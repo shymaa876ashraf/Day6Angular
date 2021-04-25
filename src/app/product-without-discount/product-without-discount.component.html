@@ -1,0 +1,33 @@
+<p>product-without-discount works!</p>
+<style>
+    .table {
+    margin: 0 auto;
+    width: 80%;
+}
+
+</style>
+    <table class="table center">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Disciunt</th>
+              <th>Image</th>
+          </tr>
+      </thead>
+
+      <tbody *ngFor="let product of ProductList">
+        <tr>
+        <td>{{product.ID}}</td>
+        <td>{{product.Name }}</td>
+        <td>{{product.Pricce}}</td>
+        <td>{{product.Qunatity}}</td>
+        <td>{{Discount}}</td>
+        <td><img src={{product.img}} alt="" width="50" height="50"></td>
+      </tr>
+    </tbody>
+
+    </table><br><br>
+
